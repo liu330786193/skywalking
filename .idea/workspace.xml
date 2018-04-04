@@ -1,9 +1,127 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="eb6795a6-43f0-4975-9018-fffc9e487f79" name="Default" comment="" />
+    <list default="true" id="eb6795a6-43f0-4975-9018-fffc9e487f79" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/my-skywalking.iml" afterPath="$PROJECT_DIR$/my-skywalking.iml" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path="E:/incubator-skywalking-3.2.6/apm-sniffer/apm-sdk-plugin/elastic-job-2.x-plugin/target/" />
+    <ignored path="E:/incubator-skywalking-3.2.6/apm-collector/apm-collector-cluster/collector-cluster-redis-provider/target/" />
+    <ignored path="E:/incubator-skywalking-3.2.6/apm-application-toolkit/apm-toolkit-log4j-2.x/target/" />
+    <ignored path="E:/incubator-skywalking-3.2.6/apm-sniffer/apm-sdk-plugin/motan-plugin/target/" />
+    <ignored path="E:/incubator-skywalking-3.2.6/apm-sniffer/apm-toolkit-activation/apm-toolkit-opentracing-activation/target/" />
+    <ignored path="E:/incubator-skywalking-3.2.6/apm-collector/apm-collector-storage/collector-storage-es-provider/target/" />
+    <ignored path="E:/incubator-skywalking-3.2.6/apm-collector/apm-collector-storage/target/" />
+    <ignored path="E:/incubator-skywalking-3.2.6/apm-collector/apm-collector-naming/target/" />
+    <ignored path="E:/incubator-skywalking-3.2.6/apm-commons/target/" />
+    <ignored path="E:/incubator-skywalking-3.2.6/apm-collector/apm-collector-queue/collector-queue-disruptor-provider/target/" />
+    <ignored path="E:/incubator-skywalking-3.2.6/apm-sniffer/apm-agent-core/target/" />
+    <ignored path="E:/incubator-skywalking-3.2.6/apm-collector/apm-collector-agent-jetty/target/" />
+    <ignored path="E:/incubator-skywalking-3.2.6/apm-collector/apm-collector-ui/target/" />
+    <ignored path="E:/incubator-skywalking-3.2.6/apm-sniffer/apm-sdk-plugin/jedis-2.x-plugin/target/" />
+    <ignored path="E:/incubator-skywalking-3.2.6/apm-sniffer/apm-sdk-plugin/spring-plugins/resttemplate-4.x-plugin/target/" />
+    <ignored path="E:/incubator-skywalking-3.2.6/apm-sniffer/apm-sdk-plugin/sharding-jdbc-1.5.x-plugin/target/" />
+    <ignored path="E:/incubator-skywalking-3.2.6/apm-sniffer/apm-sdk-plugin/nutz-plugins/mvc-annotation-1.x-plugin/target/" />
+    <ignored path="E:/incubator-skywalking-3.2.6/apm-collector/apm-collector-cluster/collector-cluster-standalone-provider/target/" />
+    <ignored path="E:/incubator-skywalking-3.2.6/apm-collector/apm-collector-grpc-manager/collector-grpc-manager-provider/target/" />
+    <ignored path="E:/incubator-skywalking-3.2.6/apm-collector/apm-collector-cache/collector-cache-guava-provider/target/" />
+    <ignored path="E:/incubator-skywalking-3.2.6/apm-collector/apm-collector-naming/collector-naming-define/target/" />
+    <ignored path="E:/incubator-skywalking-3.2.6/apm-collector/apm-collector-baseline/collector-baseline-computing-provider/target/" />
+    <ignored path="E:/incubator-skywalking-3.2.6/apm-sniffer/apm-sdk-plugin/dubbo-plugin/target/" />
+    <ignored path="E:/incubator-skywalking-3.2.6/apm-sniffer/apm-sdk-plugin/mysql-5.x-plugin/target/" />
+    <ignored path="E:/incubator-skywalking-3.2.6/apm-collector/apm-collector-instrument/target/" />
+    <ignored path="E:/incubator-skywalking-3.2.6/apm-sniffer/apm-sdk-plugin/postgresql-8.x-plugin/target/" />
+    <ignored path="E:/incubator-skywalking-3.2.6/apm-collector/apm-collector-remote/collector-remote-grpc-provider/target/" />
+    <ignored path="E:/incubator-skywalking-3.2.6/apm-sniffer/apm-test-tools/target/" />
+    <ignored path="E:/incubator-skywalking-3.2.6/apm-sniffer/apm-sdk-plugin/nutz-plugins/http-1.x-plugin/target/" />
+    <ignored path="E:/incubator-skywalking-3.2.6/apm-collector/apm-collector-baseline/collector-baseline-scheduler-define/target/" />
+    <ignored path="E:/incubator-skywalking-3.2.6/apm-collector/apm-collector-naming/collector-naming-jetty-provider/target/" />
+    <ignored path="E:/incubator-skywalking-3.2.6/apm-sniffer/apm-sdk-plugin/nutz-plugins/target/" />
+    <ignored path="E:/incubator-skywalking-3.2.6/apm-commons/apm-util/target/" />
+    <ignored path="E:/incubator-skywalking-3.2.6/apm-sniffer/apm-sdk-plugin/jdbc-commons/target/" />
+    <ignored path="E:/incubator-skywalking-3.2.6/apm-sniffer/apm-toolkit-activation/apm-toolkit-trace-activation/target/" />
+    <ignored path="E:/incubator-skywalking-3.2.6/apm-sniffer/apm-sdk-plugin/spring-plugins/spring-cloud/netflix-plugins/target/" />
+    <ignored path="E:/incubator-skywalking-3.2.6/apm-sniffer/apm-sdk-plugin/resin-4.x-plugin/target/" />
+    <ignored path="E:/incubator-skywalking-3.2.6/apm-collector/apm-collector-jetty-manager/collector-jetty-manager-provider/target/" />
+    <ignored path="E:/incubator-skywalking-3.2.6/apm-collector/apm-collector-stream/target/" />
+    <ignored path="E:/incubator-skywalking-3.2.6/apm-sniffer/apm-toolkit-activation/apm-toolkit-log4j-2.x-activation/target/" />
+    <ignored path="E:/incubator-skywalking-3.2.6/apm-collector/apm-collector-agent-stream/collector-agent-stream-define/target/" />
+    <ignored path="E:/incubator-skywalking-3.2.6/apm-sniffer/apm-sdk-plugin/jetty-plugin/jetty-server-9.x-plugin/target/" />
+    <ignored path="E:/incubator-skywalking-3.2.6/apm-sniffer/apm-sdk-plugin/spring-plugins/mvc-annotation-commons/target/" />
+    <ignored path="E:/incubator-skywalking-3.2.6/apm-application-toolkit/apm-toolkit-trace/target/" />
+    <ignored path="E:/incubator-skywalking-3.2.6/apm-sniffer/apm-sdk-plugin/rocketMQ-4.x-plugin/target/" />
+    <ignored path="E:/incubator-skywalking-3.2.6/apm-collector/apm-collector-remote/collector-remote-define/target/" />
+    <ignored path="E:/incubator-skywalking-3.2.6/apm-collector/apm-collector-agent-jetty/collector-agent-jetty-define/target/" />
+    <ignored path="E:/incubator-skywalking-3.2.6/apm-collector/apm-collector-storage/collector-storage-define/target/" />
+    <ignored path="E:/incubator-skywalking-3.2.6/apm-collector/apm-collector-component/client-component/target/" />
+    <ignored path="E:/incubator-skywalking-3.2.6/apm-collector/apm-collector-component/server-component/target/" />
+    <ignored path="E:/incubator-skywalking-3.2.6/apm-collector/target/" />
+    <ignored path="E:/incubator-skywalking-3.2.6/apm-sniffer/apm-sdk-plugin/spring-plugins/mvc-annotation-4.x-plugin/target/" />
+    <ignored path="E:/incubator-skywalking-3.2.6/apm-collector/apm-collector-remote/collector-remote-kafka-provider/target/" />
+    <ignored path="E:/incubator-skywalking-3.2.6/apm-sniffer/apm-sdk-plugin/spring-plugins/core-patch/target/" />
+    <ignored path="E:/incubator-skywalking-3.2.6/apm-collector/apm-collector-cache/target/" />
+    <ignored path="E:/incubator-skywalking-3.2.6/apm-network/target/" />
+    <ignored path="E:/incubator-skywalking-3.2.6/apm-sniffer/apm-sdk-plugin/httpClient-4.x-plugin/target/" />
+    <ignored path="E:/incubator-skywalking-3.2.6/apm-collector/apm-collector-core/target/" />
+    <ignored path="E:/incubator-skywalking-3.2.6/apm-sniffer/apm-sdk-plugin/target/" />
+    <ignored path="E:/incubator-skywalking-3.2.6/apm-sniffer/apm-sdk-plugin/spring-plugins/target/" />
+    <ignored path="E:/incubator-skywalking-3.2.6/apm-collector/apm-collector-agent-stream/target/" />
+    <ignored path="E:/incubator-skywalking-3.2.6/apm-collector/apm-collector-remote/target/" />
+    <ignored path="E:/incubator-skywalking-3.2.6/apm-collector/apm-collector-baseline/target/" />
+    <ignored path="E:/incubator-skywalking-3.2.6/apm-collector/apm-collector-storage/collector-storage-h2-provider/target/" />
+    <ignored path="E:/incubator-skywalking-3.2.6/apm-sniffer/apm-toolkit-activation/target/" />
+    <ignored path="E:/incubator-skywalking-3.2.6/apm-sniffer/apm-sdk-plugin/struts2-2.x-plugin/target/" />
+    <ignored path="E:/incubator-skywalking-3.2.6/apm-sniffer/apm-sdk-plugin/h2-1.x-plugin/target/" />
+    <ignored path="E:/incubator-skywalking-3.2.6/apm-collector/apm-collector-agent-grpc/collector-agent-grpc-define/target/" />
+    <ignored path="E:/incubator-skywalking-3.2.6/apm-collector/apm-collector-agent-jetty/collector-agent-jetty-provider/target/" />
+    <ignored path="E:/incubator-skywalking-3.2.6/apm-collector/apm-collector-queue/collector-queue-datacarrier-provider/target/" />
+    <ignored path="E:/incubator-skywalking-3.2.6/apm-commons/apm-datacarrier/target/" />
+    <ignored path="E:/incubator-skywalking-3.2.6/apm-sniffer/apm-sdk-plugin/okhttp-3.x-plugin/target/" />
+    <ignored path="E:/incubator-skywalking-3.2.6/apm-application-toolkit/apm-toolkit-log4j-1.x/target/" />
+    <ignored path="E:/incubator-skywalking-3.2.6/apm-collector/apm-collector-jetty-manager/target/" />
+    <ignored path="E:/incubator-skywalking-3.2.6/apm-sniffer/apm-sdk-plugin/spring-plugins/spring-cloud/target/" />
+    <ignored path="E:/incubator-skywalking-3.2.6/apm-sniffer/apm-sdk-plugin/spymemcached-2.x-plugin/target/" />
+    <ignored path="E:/incubator-skywalking-3.2.6/apm-sniffer/apm-sdk-plugin/xmemcached-2.x-plugin/target/" />
+    <ignored path="E:/incubator-skywalking-3.2.6/target/" />
+    <ignored path="E:/incubator-skywalking-3.2.6/apm-collector/apm-collector-ui/collector-ui-define/target/" />
+    <ignored path="E:/incubator-skywalking-3.2.6/apm-sniffer/apm-sdk-plugin/feign-default-http-9.x-plugin/target/" />
+    <ignored path="E:/incubator-skywalking-3.2.6/apm-collector/apm-collector-baseline/collector-baseline-computing-define/target/" />
+    <ignored path="E:/incubator-skywalking-3.2.6/apm-collector/apm-collector-cluster/collector-cluster-zookeeper-provider/target/" />
+    <ignored path="E:/incubator-skywalking-3.2.6/apm-collector/apm-collector-queue/collector-queue-define/target/" />
+    <ignored path="E:/incubator-skywalking-3.2.6/apm-sniffer/apm-sdk-plugin/jetty-plugin/target/" />
+    <ignored path="E:/incubator-skywalking-3.2.6/apm-application-toolkit/apm-toolkit-logback-1.x/target/" />
+    <ignored path="E:/incubator-skywalking-3.2.6/apm-application-toolkit/target/" />
+    <ignored path="E:/incubator-skywalking-3.2.6/apm-collector/apm-collector-queue/target/" />
+    <ignored path="E:/incubator-skywalking-3.2.6/apm-sniffer/apm-sdk-plugin/spring-plugins/mvc-annotation-3.x-plugin/target/" />
+    <ignored path="E:/incubator-skywalking-3.2.6/apm-sniffer/apm-toolkit-activation/apm-toolkit-log4j-1.x-activation/target/" />
+    <ignored path="E:/incubator-skywalking-3.2.6/apm-sniffer/apm-toolkit-activation/apm-toolkit-logback-1.x-activation/target/" />
+    <ignored path="E:/incubator-skywalking-3.2.6/apm-collector/apm-collector-grpc-manager/target/" />
+    <ignored path="E:/incubator-skywalking-3.2.6/apm-collector/apm-collector-agent-stream/collector-agent-stream-provider/target/" />
+    <ignored path="E:/incubator-skywalking-3.2.6/apm-collector/apm-collector-cluster/collector-cluster-define/target/" />
+    <ignored path="E:/incubator-skywalking-3.2.6/apm-collector/apm-collector-cluster/target/" />
+    <ignored path="E:/incubator-skywalking-3.2.6/apm-sniffer/apm-sdk-plugin/grpc-1.x-plugin/target/" />
+    <ignored path="E:/incubator-skywalking-3.2.6/apm-application-toolkit/apm-toolkit-opentracing/target/" />
+    <ignored path="E:/incubator-skywalking-3.2.6/apm-collector/apm-collector-cache/collector-cache-define/target/" />
+    <ignored path="E:/incubator-skywalking-3.2.6/apm-collector/apm-collector-grpc-manager/collector-grpc-manager-define/target/" />
+    <ignored path="E:/incubator-skywalking-3.2.6/apm-sniffer/apm-sdk-plugin/tomcat-7.x-8.x-plugin/target/" />
+    <ignored path="E:/incubator-skywalking-3.2.6/apm-collector/apm-collector-agent-grpc/collector-agent-grpc-provider/target/" />
+    <ignored path="E:/incubator-skywalking-3.2.6/apm-sniffer/apm-sdk-plugin/spring-plugins/concurrent-util-4.x-plugin/target/" />
+    <ignored path="E:/incubator-skywalking-3.2.6/apm-sniffer/apm-agent/target/" />
+    <ignored path="E:/incubator-skywalking-3.2.6/apm-sniffer/apm-sdk-plugin/resin-3.x-plugin/target/" />
+    <ignored path="E:/incubator-skywalking-3.2.6/apm-collector/apm-collector-jetty-manager/collector-jetty-manager-define/target/" />
+    <ignored path="E:/incubator-skywalking-3.2.6/apm-collector/apm-collector-ui/collector-ui-jetty-provider/target/" />
+    <ignored path="E:/incubator-skywalking-3.2.6/apm-sniffer/apm-sdk-plugin/jetty-plugin/jetty-client-9.x-plugin/target/" />
+    <ignored path="E:/incubator-skywalking-3.2.6/apm-collector/apm-collector-boot/target/" />
+    <ignored path="E:/incubator-skywalking-3.2.6/apm-collector/apm-collector-component/target/" />
+    <ignored path="E:/incubator-skywalking-3.2.6/apm-collector/apm-collector-agent-grpc/target/" />
+    <ignored path="E:/incubator-skywalking-3.2.6/apm-sniffer/apm-sdk-plugin/spring-plugins/spring-cloud/netflix-plugins/spring-cloud-feign-1.x-plugin/target/" />
+    <ignored path="E:/incubator-skywalking-3.2.6/apm-sniffer/apm-sdk-plugin/mongodb-3.x-plugin/target/" />
+    <ignored path="E:/incubator-skywalking-3.2.6/apm-sniffer/apm-sdk-plugin/mongodb-2.x-plugin/target/" />
+    <ignored path="E:/incubator-skywalking-3.2.6/apm-sniffer/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -85,13 +203,11 @@
       <file leaf-file-name="SkyWalkingAgent.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/lyl/skywalking/SkyWalkingAgent.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-484">
-              <caret line="34" column="10" lean-forward="false" selection-start-line="34" selection-start-column="10" selection-end-line="34" selection-end-column="10" />
+            <state relative-caret-position="198">
+              <caret line="44" column="50" lean-forward="false" selection-start-line="44" selection-start-column="50" selection-end-line="44" selection-end-column="50" />
               <folding>
                 <element signature="e#1393#1527#0" expanded="true" />
                 <element signature="e#1526#1527#0" expanded="true" />
-                <element signature="e#1647#3016#0" expanded="true" />
-                <element signature="e#3015#3016#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -110,7 +226,7 @@
       <file leaf-file-name="InstrumentDebuggingClass.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/lyl/skywalking/InstrumentDebuggingClass.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="682">
+            <state relative-caret-position="484">
               <caret line="31" column="56" lean-forward="false" selection-start-line="31" selection-start-column="56" selection-end-line="31" selection-end-column="56" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -120,6 +236,9 @@
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
@@ -175,6 +294,7 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
+        <option name="alwaysUpdateSnapshots" value="true" />
         <option name="localRepository" value="E:\repository" />
         <option name="mavenHome" value="D:/Maven" />
       </MavenGeneralSettings>
@@ -202,10 +322,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="249" />
-    <option name="y" value="26" />
-    <option name="width" value="1362" />
-    <option name="height" value="1039" />
+    <option name="x" value="-52" />
+    <option name="y" value="22" />
+    <option name="width" value="1679" />
+    <option name="height" value="1069" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -222,54 +342,33 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="skywalking" type="b2602c69:ProjectViewProjectNode" />
-              <item name="skywalking" type="462c0819:PsiDirectoryNode" />
+              <item name="my-skywalking" type="47feb1d3:ProjectViewModuleNode" />
             </path>
             <path>
               <item name="skywalking" type="b2602c69:ProjectViewProjectNode" />
-              <item name="skywalking" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="skywalking" type="b2602c69:ProjectViewProjectNode" />
-              <item name="skywalking" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="skywalking" type="b2602c69:ProjectViewProjectNode" />
-              <item name="skywalking" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="my-skywalking" type="47feb1d3:ProjectViewModuleNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="skywalking" type="b2602c69:ProjectViewProjectNode" />
-              <item name="skywalking" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="my-skywalking" type="47feb1d3:ProjectViewModuleNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="skywalking" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="skywalking" type="b2602c69:ProjectViewProjectNode" />
-              <item name="skywalking" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="my-skywalking" type="47feb1d3:ProjectViewModuleNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="skywalking" type="b2602c69:ProjectViewProjectNode" />
-              <item name="skywalking" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="my-skywalking" type="47feb1d3:ProjectViewModuleNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="services" type="462c0819:PsiDirectoryNode" />
             </path>
@@ -278,10 +377,12 @@
         </subPane>
       </pane>
       <pane id="AndroidView" />
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="E:/incubator-skywalking-3.2.6" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
@@ -419,14 +520,16 @@
       <workItem from="1522637476596" duration="4871000" />
       <workItem from="1522667254595" duration="199000" />
       <workItem from="1522754177788" duration="26000" />
+      <workItem from="1522805840626" duration="783000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5096000" />
+    <option name="totallyTimeSpent" value="5879000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -435,12 +538,12 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15511727" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24918744" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14179105" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1433902" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -824,7 +927,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/lyl/skywalking/InstrumentDebuggingClass.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="682">
+        <state relative-caret-position="484">
           <caret line="31" column="56" lean-forward="false" selection-start-line="31" selection-start-column="56" selection-end-line="31" selection-end-column="56" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -834,13 +937,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/lyl/skywalking/SkyWalkingAgent.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-484">
-          <caret line="34" column="10" lean-forward="false" selection-start-line="34" selection-start-column="10" selection-end-line="34" selection-end-column="10" />
+        <state relative-caret-position="198">
+          <caret line="44" column="50" lean-forward="false" selection-start-line="44" selection-start-column="50" selection-end-line="44" selection-end-column="50" />
           <folding>
             <element signature="e#1393#1527#0" expanded="true" />
             <element signature="e#1526#1527#0" expanded="true" />
-            <element signature="e#1647#3016#0" expanded="true" />
-            <element signature="e#3015#3016#0" expanded="true" />
           </folding>
         </state>
       </provider>

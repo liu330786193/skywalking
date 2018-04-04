@@ -18,6 +18,9 @@
 
 package com.lyl.skywalking.trace;
 
+import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.JSONArray;
+import com.google.gson.JsonObject;
 import com.lyl.skywalking.boot.BootService;
 import com.lyl.skywalking.boot.ServiceManager;
 import com.lyl.skywalking.context.TracingContext;
@@ -83,8 +86,14 @@ public class TraceSegmentServiceClient implements BootService, IConsumer<TraceSe
 
     @Override
     public void consume(List<TraceSegment> data) {
-
-        System.out.println("上传tracement数据" + data);
+        for (TraceSegment segment : data) {
+            try {
+                UpstreamSegment upstreamSegment = segment.transform();
+                System.out.println("上传tracement数据" + JSON.toJSONString(upstreamSegment));
+            } catch (Throwable t) {
+                logger.error(t, "Transform and send UpstreamSegment to collector fail.");
+            }
+        }
         printUplinkStatus();
     }
 

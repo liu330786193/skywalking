@@ -71,4 +71,5 @@
 com.lyl.skywalking.jvm.JVMService
 com.lyl.skywalking.trace.TraceSegmentServiceClient
 com.lyl.skywalking.context.ContextManager
+com.lyl.skywalking.sampling.SamplingService
 

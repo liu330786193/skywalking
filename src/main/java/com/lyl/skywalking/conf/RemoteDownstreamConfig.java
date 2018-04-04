@@ -31,9 +31,11 @@ import java.util.List;
  */
 public class RemoteDownstreamConfig {
     public static class Agent {
-        public volatile static int APPLICATION_ID = DictionaryUtil.nullValue();
+//        public volatile static int APPLICATION_ID = DictionaryUtil.nullValue();
+        public volatile static int APPLICATION_ID = 12345678;
 
-        public volatile static int APPLICATION_INSTANCE_ID = DictionaryUtil.nullValue();
+//        public volatile static int APPLICATION_INSTANCE_ID = DictionaryUtil.nullValue();
+        public volatile static int APPLICATION_INSTANCE_ID = 87654321;
     }
 
     public static class Collector {
