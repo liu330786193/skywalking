@@ -71,6 +71,7 @@ public class TraceSegmentServiceClient implements BootService, IConsumer<TraceSe
 
     @Override
     public void afterBoot() throws Throwable {
+
         TracingContext.ListenerManager.add(this);
     }
 
