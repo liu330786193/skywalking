@@ -19,22 +19,14 @@
 package com.lyl.skywalking.trace;
 
 import com.alibaba.fastjson.JSON;
-import com.alibaba.fastjson.JSONArray;
-import com.google.gson.JsonObject;
 import com.lyl.skywalking.boot.BootService;
-import com.lyl.skywalking.boot.ServiceManager;
 import com.lyl.skywalking.context.TracingContext;
 import com.lyl.skywalking.context.TracingContextListener;
 import com.lyl.skywalking.context.trace.TraceSegment;
 import com.lyl.skywalking.logging.api.ILog;
 import com.lyl.skywalking.logging.api.LogManager;
-import com.lyl.skywalking.proto.Downstream;
-import com.lyl.skywalking.proto.TraceSegmentServiceGrpc;
-import com.lyl.skywalking.proto.UpstreamSegment;
 import com.lyl.skywalking.trace.buffer.BufferStrategy;
 import com.lyl.skywalking.trace.consumer.IConsumer;
-import io.grpc.ManagedChannel;
-import io.grpc.stub.StreamObserver;
 
 
 import java.util.List;
@@ -52,7 +44,6 @@ public class TraceSegmentServiceClient implements BootService, IConsumer<TraceSe
     private long segmentUplinkedCounter;
     private long segmentAbandonedCounter;
     private volatile DataCarrier<TraceSegment> carrier;
-    private volatile TraceSegmentServiceGrpc.TraceSegmentServiceStub serviceStub;
 
     @Override
     public void beforeBoot() throws Throwable {
@@ -89,8 +80,7 @@ public class TraceSegmentServiceClient implements BootService, IConsumer<TraceSe
     public void consume(List<TraceSegment> data) {
         for (TraceSegment segment : data) {
             try {
-                UpstreamSegment upstreamSegment = segment.transform();
-                System.out.println("上传tracement数据" + JSON.toJSONString(upstreamSegment));
+                System.out.println("上传tracement数据" + JSON.toJSONString(data));
             } catch (Throwable t) {
                 logger.error(t, "Transform and send UpstreamSegment to collector fail.");
             }

@@ -18,8 +18,6 @@
 
 package com.lyl.skywalking.context.ids;
 
-import com.lyl.skywalking.proto.UniqueId;
-
 /**
  * The <code>DistributedTraceId</code> presents a distributed call chain.
  * <p>
@@ -53,9 +51,6 @@ public abstract class DistributedTraceId {
         return id.toString();
     }
 
-    public UniqueId toUniqueId() {
-        return id.transform();
-    }
 
     /**
      * Compare the two <code>DistributedTraceId</code> by its {@link #id},

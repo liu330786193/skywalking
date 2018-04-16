@@ -19,8 +19,6 @@
 package com.lyl.skywalking.context.util;
 
 
-import com.lyl.skywalking.proto.KeyWithStringValue;
-
 /**
  * The <code>KeyValuePair</code> represents a object which contains a string key and a string value.
  *
@@ -43,12 +41,4 @@ public class KeyValuePair {
         return value;
     }
 
-    public KeyWithStringValue transform() {
-        KeyWithStringValue.Builder keyValueBuilder = KeyWithStringValue.newBuilder();
-        keyValueBuilder.setKey(key);
-        if (value != null) {
-            keyValueBuilder.setValue(value);
-        }
-        return keyValueBuilder.build();
-    }
 }

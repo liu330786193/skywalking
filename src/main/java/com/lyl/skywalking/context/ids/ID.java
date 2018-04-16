@@ -18,8 +18,6 @@
 
 package com.lyl.skywalking.context.ids;
 
-import com.lyl.skywalking.proto.UniqueId;
-
 /**
  * @author wusheng
  */
@@ -99,7 +97,4 @@ public class ID {
         return isValid;
     }
 
-    public UniqueId transform() {
-        return UniqueId.newBuilder().addIdParts(part1).addIdParts(part2).addIdParts(part3).build();
-    }
 }

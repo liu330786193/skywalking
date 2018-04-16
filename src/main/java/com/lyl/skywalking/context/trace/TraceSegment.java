@@ -25,9 +25,6 @@ import com.lyl.skywalking.context.ids.*;
 import java.util.LinkedList;
 import java.util.List;
 
-import com.lyl.skywalking.proto.TraceSegmentObject;
-import com.lyl.skywalking.proto.UpstreamSegment;
-
 /**
  * {@link TraceSegment} is a segment or fragment of the distributed trace. {@see https://github.com/opentracing/specification/blob/master/specification.md#the-opentracing-data-model}
  * A {@link TraceSegment} means the segment, which exists in current {@link Thread}. And the distributed trace is formed
@@ -141,6 +138,10 @@ public class TraceSegment {
         return this.spans != null && this.spans.size() == 1;
     }
 
+    public List<AbstractTracingSpan> getSpans() {
+        return spans;
+    }
+
     public boolean isIgnore() {
         return ignore;
     }
@@ -154,33 +155,8 @@ public class TraceSegment {
      *
      * @return the segment as GRPC service parameter
      */
-    public UpstreamSegment transform() {
-        UpstreamSegment.Builder upstreamBuilder = UpstreamSegment.newBuilder();
-        for (DistributedTraceId distributedTraceId : getRelatedGlobalTraces()) {
-            upstreamBuilder = upstreamBuilder.addGlobalTraceIds(distributedTraceId.toUniqueId());
-        }
-        TraceSegmentObject.Builder traceSegmentBuilder = TraceSegmentObject.newBuilder();
-        /**
-         * Trace Segment
-         */
-        traceSegmentBuilder.setTraceSegmentId(this.traceSegmentId.transform());
-        // TraceSegmentReference
-        if (this.refs != null) {
-            for (TraceSegmentRef ref : this.refs) {
-                traceSegmentBuilder.addRefs(ref.transform());
-            }
-        }
-        // SpanObject
-        for (AbstractTracingSpan span : this.spans) {
-            traceSegmentBuilder.addSpans(span.transform());
-        }
-        traceSegmentBuilder.setApplicationId(RemoteDownstreamConfig.Agent.APPLICATION_ID);
-        traceSegmentBuilder.setApplicationInstanceId(RemoteDownstreamConfig.Agent.APPLICATION_INSTANCE_ID);
-        traceSegmentBuilder.setIsSizeLimited(this.isSizeLimited);
 
-        upstreamBuilder.setSegment(traceSegmentBuilder.build().toByteString());
-        return upstreamBuilder.build();
-    }
+
 
     @Override
     public String toString() {

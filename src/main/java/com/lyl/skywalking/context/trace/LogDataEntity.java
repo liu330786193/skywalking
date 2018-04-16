@@ -23,8 +23,6 @@ import com.lyl.skywalking.context.util.KeyValuePair;
 import java.util.LinkedList;
 import java.util.List;
 
-import com.lyl.skywalking.proto.LogMessage;
-
 /**
  * The <code>LogDataEntity</code> represents a collection of {@link KeyValuePair},
  * contains several fields of a logging operation.
@@ -61,14 +59,5 @@ public class LogDataEntity {
         public LogDataEntity build(long timestamp) {
             return new LogDataEntity(timestamp, logs);
         }
-    }
-
-    public LogMessage transform() {
-        LogMessage.Builder logMessageBuilder = LogMessage.newBuilder();
-        for (KeyValuePair log : logs) {
-            logMessageBuilder.addData(log.transform());
-        }
-        logMessageBuilder.setTime(timestamp);
-        return logMessageBuilder.build();
     }
 }

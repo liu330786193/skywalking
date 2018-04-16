@@ -27,9 +27,6 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 
-import com.lyl.skywalking.proto.SpanObject;
-import com.lyl.skywalking.proto.SpanType;
-
 /**
  * The <code>AbstractTracingSpan</code> represents a group of {@link AbstractSpan} implementations, which belongs a real
  * distributed trace.
@@ -234,47 +231,76 @@ public abstract class AbstractTracingSpan implements AbstractSpan {
         return this;
     }
 
-    public SpanObject.Builder transform() {
-        SpanObject.Builder spanBuilder = SpanObject.newBuilder();
-
-        spanBuilder.setSpanId(this.spanId);
-        spanBuilder.setParentSpanId(parentSpanId);
-        spanBuilder.setStartTime(startTime);
-        spanBuilder.setEndTime(endTime);
-        if (operationId != DictionaryUtil.nullValue()) {
-            spanBuilder.setOperationNameId(operationId);
-        } else {
-            spanBuilder.setOperationName(operationName);
-        }
-        if (isEntry()) {
-            spanBuilder.setSpanType(SpanType.Entry);
-        } else if (isExit()) {
-            spanBuilder.setSpanType(SpanType.Exit);
-        } else {
-            spanBuilder.setSpanType(SpanType.Local);
-        }
-        if (this.layer != null) {
-            spanBuilder.setSpanLayerValue(this.layer.getCode());
-        }
-        if (componentId != DictionaryUtil.nullValue()) {
-            spanBuilder.setComponentId(componentId);
-        } else {
-            if (componentName != null) {
-                spanBuilder.setComponent(componentName);
-            }
-        }
-        spanBuilder.setIsError(errorOccurred);
-        if (this.tags != null) {
-            for (KeyValuePair tag : this.tags) {
-                spanBuilder.addTags(tag.transform());
-            }
-        }
-        if (this.logs != null) {
-            for (LogDataEntity log : this.logs) {
-                spanBuilder.addLogs(log.transform());
-            }
-        }
-
-        return spanBuilder;
+    public void setSpanId(int spanId) {
+        this.spanId = spanId;
     }
+
+    public int getParentSpanId() {
+        return parentSpanId;
+    }
+
+    public void setParentSpanId(int parentSpanId) {
+        this.parentSpanId = parentSpanId;
+    }
+
+    public List<KeyValuePair> getTags() {
+        return tags;
+    }
+
+    public void setTags(List<KeyValuePair> tags) {
+        this.tags = tags;
+    }
+
+    public SpanLayer getLayer() {
+        return layer;
+    }
+
+    public long getStartTime() {
+        return startTime;
+    }
+
+    public void setStartTime(long startTime) {
+        this.startTime = startTime;
+    }
+
+    public long getEndTime() {
+        return endTime;
+    }
+
+    public void setEndTime(long endTime) {
+        this.endTime = endTime;
+    }
+
+    public boolean isErrorOccurred() {
+        return errorOccurred;
+    }
+
+    public void setErrorOccurred(boolean errorOccurred) {
+        this.errorOccurred = errorOccurred;
+    }
+
+    public int getComponentId() {
+        return componentId;
+    }
+
+    public void setComponentId(int componentId) {
+        this.componentId = componentId;
+    }
+
+    public String getComponentName() {
+        return componentName;
+    }
+
+    public void setComponentName(String componentName) {
+        this.componentName = componentName;
+    }
+
+    public List<LogDataEntity> getLogs() {
+        return logs;
+    }
+
+    public void setLogs(List<LogDataEntity> logs) {
+        this.logs = logs;
+    }
+
 }

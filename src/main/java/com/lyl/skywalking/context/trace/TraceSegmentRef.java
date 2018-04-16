@@ -23,8 +23,6 @@ import com.lyl.skywalking.context.ContextCarrier;
 import com.lyl.skywalking.context.ContextSnapshot;
 import com.lyl.skywalking.context.ids.ID;
 import com.lyl.skywalking.dictionary.DictionaryUtil;
-import com.lyl.skywalking.proto.RefType;
-import com.lyl.skywalking.proto.TraceSegmentReference;
 
 /**
  * {@link TraceSegmentRef} is like a pointer, which ref to another {@link TraceSegment},
@@ -118,35 +116,6 @@ public class TraceSegmentRef {
         return entryApplicationInstanceId;
     }
 
-    public TraceSegmentReference transform() {
-        TraceSegmentReference.Builder refBuilder = TraceSegmentReference.newBuilder();
-        if (SegmentRefType.CROSS_PROCESS.equals(type)) {
-            refBuilder.setRefType(RefType.CrossProcess);
-            refBuilder.setParentApplicationInstanceId(parentApplicationInstanceId);
-            if (peerId == DictionaryUtil.nullValue()) {
-                refBuilder.setNetworkAddress(peerHost);
-            } else {
-                refBuilder.setNetworkAddressId(peerId);
-            }
-        } else {
-            refBuilder.setRefType(RefType.CrossThread);
-        }
-
-        refBuilder.setEntryApplicationInstanceId(entryApplicationInstanceId);
-        refBuilder.setParentTraceSegmentId(traceSegmentId.transform());
-        refBuilder.setParentSpanId(spanId);
-        if (entryOperationId == DictionaryUtil.nullValue()) {
-            refBuilder.setEntryServiceName(entryOperationName);
-        } else {
-            refBuilder.setEntryServiceId(entryOperationId);
-        }
-        if (parentOperationId == DictionaryUtil.nullValue()) {
-            refBuilder.setParentServiceName(parentOperationName);
-        } else {
-            refBuilder.setParentServiceId(parentOperationId);
-        }
-        return refBuilder.build();
-    }
 
     @Override
     public boolean equals(Object o) {

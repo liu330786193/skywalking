@@ -20,8 +20,6 @@ package com.lyl.skywalking.context.trace;
 
 import com.lyl.skywalking.component.Component;
 import com.lyl.skywalking.dictionary.DictionaryUtil;
-import com.lyl.skywalking.proto.SpanObject;
-
 /**
  * The <code>ExitSpan</code> represents a service consumer point, such as Feign, Okhttp client for a Http service.
  *
@@ -117,17 +115,6 @@ public class ExitSpan extends StackBasedTracingSpan implements WithPeerInfo {
         return this;
     }
 
-    @Override public SpanObject.Builder transform() {
-        SpanObject.Builder spanBuilder = super.transform();
-        if (peerId != DictionaryUtil.nullValue()) {
-            spanBuilder.setPeerId(peerId);
-        } else {
-            if (peer != null) {
-                spanBuilder.setPeer(peer);
-            }
-        }
-        return spanBuilder;
-    }
 
     @Override
     public AbstractTracingSpan setOperationName(String operationName) {
